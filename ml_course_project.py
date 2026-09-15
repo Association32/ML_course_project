@@ -27,7 +27,7 @@ from jarowinkler import *
 import random
 
 from string import punctuation
-line_size = 10000
+line_size = 10000000
 gram_size =3
 
 #get all the words
