@@ -32,11 +32,18 @@ gram_size =3
 
 #get all the words
 
+
+
 romeoAndJulietText = open("shakespeare.txt").readlines()
+miceAndMenText = open("austen.txt").readlines()
+# Making sure to not get errors from out-or-range
+if line_size > len(romeoAndJulietText):
+  line_size = len(romeoAndJulietText)
+if line_size > len(miceAndMenText):
+  line_size = len(miceAndMenText)
+
 r = random.randint(0, len(romeoAndJulietText)-line_size) ## randomizing the input
 romeoAndJulietText = romeoAndJulietText[r:r+line_size]
-
-miceAndMenText = open("austen.txt").readlines()
 r = random.randint(0, len(miceAndMenText)-line_size)
 miceAndMenText = miceAndMenText[r:r+line_size]
 
