@@ -22,7 +22,7 @@ nltk.download('punkt_tab')
 nltk.download('wordnet')
 from nltk.stem import WordNetLemmatizer
 import math
-!pip install jarowinkler
+
 from jarowinkler import *
 import random
 
