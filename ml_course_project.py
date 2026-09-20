@@ -211,7 +211,8 @@ def calculate_ortogaphic_similarity(word, context):
   if len(scores) == 0:
     return 0
   else:
-    return sum(scores) / len(scores)
+    return max(scores)
+    #return sum(scores) / len(scores)
 
 # calculating the ortographic similarty of all the common words based on the old text
 def calculate_ortogaphic_similarities(words, text):
